@@ -19,10 +19,10 @@ int main(){
         y+=pow(atof(N.c_str()),2);
         i++;
     }
-    cout << "Number of data = " << i+1 << "\n";
-    Mean = x/(i+1);
+    cout << "Number of data = " << i << "\n";
+    Mean = x/(i);
     cout << "Mean = " << Mean << "\n";
-    z = (y/(i+1)) - pow(Mean,2);
+    z = (y/(i)) - pow(Mean,2);
     cout << "Standard deviation = " << pow(z,0.5);
 	
 	return 0;
