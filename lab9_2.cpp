@@ -1,4 +1,18 @@
-//cout << "-------------------- SOTUS ---------------------";
-//cout << textline;
-//cout << "-------------------- SOTUS ---------------------";
-//Don't forget to change cout to output filestream
+#include<iostream>
+#include<string>
+#include<fstream>
+using namespace std;
+
+int main(){
+
+    ofstream Csotus("cheerbook_copy.txt");
+    ifstream sotus("cheerbook.txt"); 
+    string textline;
+    Csotus << "-------------------- SOTUS ---------------------\n";
+    while(getline(sotus,textline)){
+        Csotus<< textline << "\n";
+    }
+    Csotus << "-------------------- SOTUS ---------------------";
+	
+	return 0;
+}
